@@ -1,6 +1,6 @@
 {
    "pack": {
-      "pack_format": 12,
-      "description": "Config at\nshaders/include/fog.glsl"
+      "pack_format": 13,
+      "description": "Config at\nminecraft/shaders/include/fog.glsl"
    }
 }

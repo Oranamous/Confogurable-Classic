@@ -9,6 +9,18 @@
 // vanilla behavior. Always include the decimal
 // point or the shader won't compile!
 
+// If you intend to use this mod with Sodium,
+// Make sure to copy this section of the file
+// over to sodium/shaders/include/fog.glsl
+// after you set them here, make sure to replace
+// the previous settings, if you keep them, the
+// shader can't compile. To allow the Sodium
+// shaders to load, you must use
+// sodium-shader-support(1.19.3): https://github.com/DartCat25/sodium-shader-support
+// sodium-shader-support(1.19.4): https://github.com/Oranamous/sodium-shader-support
+
+// ---------------------------------------------
+
 // Distance where fog starts to appear, relative
 // to the player's render distance
 float fogStartMultiplier = 0.1;
@@ -23,11 +35,6 @@ float fogEndMultiplier = 1.0;
 float fogCurveFactor = 0.9;
 
 // ---------------------------------------------
-
-
-
-
-
 
 
 float linear_fog_fade(float vertexDistance, float fogStart, float fogEnd) {
